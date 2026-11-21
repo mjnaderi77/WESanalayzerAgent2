@@ -1,0 +1,92 @@
+[
+    {
+        "timestamp": "2026-11-18T17:37:50.029603+00:00",
+        "step": "INIT",
+        "decision": "AlphaGenome disabled",
+        "reason": "ALPHAGENOME_API_KEY is missing"
+    },
+    {
+        "timestamp": "2026-11-18T17:37:50.029700+00:00",
+        "step": "INIT",
+        "decision": "ClinicalImpactEngine disabled",
+        "reason": "GEMINI_API_KEY is not set"
+    },
+    {
+        "timestamp": "2026-11-18T17:37:50.029784+00:00",
+        "step": "START",
+        "decision": "WES Variant Agent started",
+        "reason": "data/input/sample.vcf"
+    },
+    {
+        "timestamp": "2026-11-18T17:37:50.029828+00:00",
+        "step": "QC",
+        "decision": "Running quality control",
+        "reason": "data/input/sample.vcf"
+    },
+    {
+        "timestamp": "2026-11-18T17:37:50.029844+00:00",
+        "step": "ERROR",
+        "decision": "QC failed",
+        "reason": "'VariantQC' object has no attribute 'run_qc'"
+    },
+    {
+        "timestamp": "2026-11-18T17:37:50.029968+00:00",
+        "step": "ACT",
+        "decision": "Running vep",
+        "reason": ""
+    },
+    {
+        "timestamp": "2026-11-18T17:41:50.711023+00:00",
+        "step": "ERROR",
+        "decision": "vep failed",
+        "reason": "HTTPSConnectionPool(host='rest.ensembl.org', port=443): Max retries exceeded with url: /vep/homo_sapiens/region?canonical=1&hgvs=1&protein=1&symbol=1&mane=1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='rest.ensembl.org', port=443) at 0x798c8b6fba10>, 'Connection to rest.ensembl.org timed out. (connect timeout=120)'))"
+    },
+    {
+        "timestamp": "2026-11-18T17:41:50.711161+00:00",
+        "step": "PLAN",
+        "decision": "Tool selection completed",
+        "reason": "Consequences: []"
+    },
+    {
+        "timestamp": "2026-11-18T17:41:50.711171+00:00",
+        "step": "PLAN",
+        "decision": "Selected tools",
+        "reason": "['gnomad', 'clinvar']"
+    },
+    {
+        "timestamp": "2026-11-18T17:41:50.711285+00:00",
+        "step": "ACT",
+        "decision": "Running gnomad",
+        "reason": ""
+    },
+    {
+        "timestamp": "2026-11-18T17:41:55.160340+00:00",
+        "step": "OBSERVE",
+        "decision": "gnomad completed",
+        "reason": "Output: data/output/gnomad_results.json"
+    },
+    {
+        "timestamp": "2026-11-18T17:41:55.160609+00:00",
+        "step": "ACT",
+        "decision": "Running clinvar",
+        "reason": ""
+    },
+    {
+        "timestamp": "2026-11-18T17:41:59.673159+00:00",
+        "step": "OBSERVE",
+        "decision": "clinvar completed",
+        "reason": "Output: data/output/clinvar_results.json"
+    },
+    {
+        "timestamp": "2026-11-18T17:41:59.673390+00:00",
+        "step": "REFLECT",
+        "decision": "Evidence review completed",
+        "reason": "3 observations"
+    },
+    {
+        "timestamp": "2026-11-18T17:41:59.673418+00:00",
+        "step": "SCORE",
+        "decision": "Clinical interpretation skipped",
+        "reason": "Gemini engine or VEP result unavailable"
+    }
+]

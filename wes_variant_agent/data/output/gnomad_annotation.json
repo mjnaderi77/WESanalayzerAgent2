@@ -1,0 +1,26 @@
+{
+    "source": "gnomAD GraphQL API",
+    "dataset": "gnomad_r4",
+    "assembly": "GRCh38",
+    "total_input_variants": 2,
+    "variants_found": 0,
+    "variants_not_found": 0,
+    "annotations": [
+        {
+            "chrom": "1",
+            "pos": 100000,
+            "ref": "A",
+            "alt": "G",
+            "gnomad_status": "api_error",
+            "error": "403 Client Error: Forbidden for url: https://gnomad.broadinstitute.org/api"
+        },
+        {
+            "chrom": "1",
+            "pos": 200000,
+            "ref": "C",
+            "alt": "T",
+            "gnomad_status": "api_error",
+            "error": "403 Client Error: Forbidden for url: https://gnomad.broadinstitute.org/api"
+        }
+    ]
+}

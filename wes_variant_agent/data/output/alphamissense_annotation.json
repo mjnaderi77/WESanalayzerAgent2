@@ -1,0 +1,28 @@
+{
+    "source": "Ensembl VEP with AlphaMissense",
+    "species": "homo_sapiens",
+    "assembly": "GRCh38",
+    "total_input_variants": 2,
+    "missense_variants": 0,
+    "predictions_found": 0,
+    "annotations": [
+        {
+            "chrom": "1",
+            "pos": 100000,
+            "ref": "A",
+            "alt": "G",
+            "most_severe_consequence": "intron_variant",
+            "status": "no_missense_consequence",
+            "transcript_predictions": []
+        },
+        {
+            "chrom": "1",
+            "pos": 200000,
+            "ref": "C",
+            "alt": "T",
+            "most_severe_consequence": "non_coding_transcript_exon_variant",
+            "status": "no_missense_consequence",
+            "transcript_predictions": []
+        }
+    ]
+}

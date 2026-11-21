@@ -1,0 +1,95 @@
+{
+    "total_variants": 2,
+    "passed": 2,
+    "failed": 0,
+    "thresholds": {
+        "min_qual": 30,
+        "min_dp": 10
+    },
+    "variants": [
+        {
+            "chrom": "1",
+            "pos": 100000,
+            "ref": "A",
+            "alt": [
+                "G"
+            ],
+            "qual": 99.0,
+            "filters": [
+                "PASS"
+            ],
+            "checks": {
+                "qual_pass": true,
+                "filter_pass": true
+            },
+            "variant_qc_pass": true,
+            "samples": [
+                {
+                    "sample": "SAMPLE_01",
+                    "dp": 120,
+                    "genotype": [
+                        0,
+                        1
+                    ],
+                    "ad": [
+                        78,
+                        42
+                    ],
+                    "allele_balance": [
+                        0.65,
+                        0.35
+                    ],
+                    "ad_available": true,
+                    "checks": {
+                        "dp_pass": true,
+                        "genotype_available": true
+                    },
+                    "sample_qc_pass": true
+                }
+            ],
+            "qc_pass": true
+        },
+        {
+            "chrom": "1",
+            "pos": 200000,
+            "ref": "C",
+            "alt": [
+                "T"
+            ],
+            "qual": 85.0,
+            "filters": [
+                "PASS"
+            ],
+            "checks": {
+                "qual_pass": true,
+                "filter_pass": true
+            },
+            "variant_qc_pass": true,
+            "samples": [
+                {
+                    "sample": "SAMPLE_01",
+                    "dp": 95,
+                    "genotype": [
+                        1,
+                        1
+                    ],
+                    "ad": [
+                        0,
+                        95
+                    ],
+                    "allele_balance": [
+                        0.0,
+                        1.0
+                    ],
+                    "ad_available": true,
+                    "checks": {
+                        "dp_pass": true,
+                        "genotype_available": true
+                    },
+                    "sample_qc_pass": true
+                }
+            ],
+            "qc_pass": true
+        }
+    ]
+}

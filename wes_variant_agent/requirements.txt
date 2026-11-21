@@ -1,0 +1,6 @@
+pysam
+pandas
+numpy
+cyvcf2
+pytest
+requests
